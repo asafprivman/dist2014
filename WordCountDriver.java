@@ -36,7 +36,7 @@ public class WordCountDriver {
         FileInputFormat.setInputPaths(job, new Path("In"));
         FileOutputFormat.setOutputPath(job, new Path(outpath));
 
-        job.setMapperClass(WordCountMapper.class);
+        job.setMapperClass(WordCountMapper2.class);
         job.setReducerClass(WordCountReducer.class);
 
         System.out.println(job.waitForCompletion(true));

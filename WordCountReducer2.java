@@ -6,7 +6,7 @@ import org.apache.hadoop.mapreduce.Reducer;
 import org.apache.hadoop.io.IntWritable;
 import org.apache.hadoop.io.Text;
 
-public class WordCountReducer extends
+public class WordCountReducer2 extends
         Reducer<Text, IntWritable, Text, IntWritable> {
 	private int wordTotal,decTotal;
     protected void reduce(Text key, Iterable<IntWritable> values,

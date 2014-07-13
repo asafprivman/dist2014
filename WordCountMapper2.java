@@ -8,7 +8,7 @@ import org.apache.hadoop.io.LongWritable;
 import org.apache.hadoop.io.Text;
 import org.apache.hadoop.mapreduce.Mapper;
 
-public class WordCountMapper extends
+public class WordCountMapper2 extends
         Mapper<LongWritable, Text, Text, IntWritable> {
     private Text wordPair = new Text();
     private String[] words = new String[5];
